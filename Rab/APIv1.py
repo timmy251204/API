@@ -60,7 +60,7 @@ def get_store(name):
 @app.route('/store')
 def get_stores():
     return jsonify(stores)
-
+        
 
 
 # POST /store/<name>/item -> name, price
