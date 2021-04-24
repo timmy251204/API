@@ -3,8 +3,8 @@ def insert_test_values():
     connection = sqlite3.connect('data1.db')
     cursor = connection.cursor()
 
-    create_user = 'INSERT INTO users VALUES (?, ?, ?)'
-    user = ( 'brawlerdima', '123')
+    create_user = 'INSERT INTO users VALUES (?, ?)'
+    user = ( 1, 'brawlerdima', '123')
     cursor.execute(create_user, user)
 
     users = [

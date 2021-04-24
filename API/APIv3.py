@@ -11,7 +11,7 @@ api = Api(app)
 app.config['SECRET_KEY'] = 'super-secret'
 
 create_tables()
-insert_test_values()
+
 
 jwt = JWT(app, authenticate, identity)
 
