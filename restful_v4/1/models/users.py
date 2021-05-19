@@ -1,6 +1,3 @@
-import sqlite3
-from flask_restful import reqparse, abort, Api, Resource
-from flask_jwt import JWT, jwt_required, current_identity
 from db import db
 
 
