@@ -11,7 +11,7 @@ app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.debug = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data4.db'
 app.config['SECRET_KEY'] = 'super-secret'
 db.init_app(app)
 createtables()
